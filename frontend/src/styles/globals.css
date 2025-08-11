@@ -1,0 +1,76 @@
+:root{
+  --bg:#0f1724; /* deep navy */
+  --card:#0b1220;
+  --accent:#7c3aed; /* violet */
+  --muted:#96a0b8;
+  --glass: rgba(255,255,255,0.03);
+  --green:#10b981;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%;margin:0;padding:0;background:linear-gradient(180deg,#071024 0%, #0f1724 100%);color:#e6eef8}
+
+.app-root{height:100vh;display:flex;align-items:center;justify-content:center}
+
+/* Join screen */
+.join-screen{display:flex;align-items:center;justify-content:center;width:100%}
+.join-card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));padding:36px;border-radius:16px;box-shadow:0 8px 30px rgba(2,6,23,0.7);width:420px;text-align:center}
+.join-card .logo{width:64px;height:64px;margin-bottom:8px;border-radius:12px}
+.join-card h1{margin:0;font-size:28px;letter-spacing:0.6px}
+.join-card .sub{color:var(--muted);margin:6px 0 18px}
+.join-card input{width:100%;padding:12px 14px;margin:8px 0;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.04);color:inherit}
+.btn{background:linear-gradient(90deg,var(--accent),#4f46e5);border:none;padding:10px 14px;border-radius:10px;color:white;font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.tip{color:var(--muted);font-size:13px;margin-top:12px}
+
+/* Main layout */
+.main-layout{display:flex;gap:18px;width:92%;height:84vh}
+.sidebar{width:260px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:18px}
+.profile{display:flex;gap:12px;align-items:center}
+.avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(90deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700}
+.profile h3{margin:0}
+.muted{color:var(--muted);font-size:13px}
+.rooms ul{list-style:none;padding:0;margin:8px 0}
+.rooms li{padding:10px;border-radius:8px;cursor:pointer;color:var(--muted)}
+
+.chat-window{flex:1;display:flex;flex-direction:column;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;overflow:hidden}
+.chat-header{padding:18px;border-bottom:1px solid rgba(255,255,255,0.02);display:flex;justify-content:space-between;align-items:center}
+.messages{flex:1;padding:20px;overflow:auto}
+.message{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px}
+.avatar-mini{width:38px;height:38px;border-radius:10px;background:linear-gradient(90deg,#334155,var(--accent));display:flex;align-items:center;justify-content:center;font-weight:700}
+.bubble{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:12px;border-radius:12px;max-width:70%}
+.message.mine{flex-direction:row-reverse}
+.message.mine .bubble{background:linear-gradient(90deg, rgba(124,58,237,0.18), rgba(99,102,241,0.12));}
+.meta{font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center}
+.time{font-size:11px;color:var(--muted)}
+.system{color:var(--muted);text-align:center;margin:8px 0}
+
+.message-input{display:flex;gap:12px;padding:14px;border-top:1px solid rgba(255,255,255,0.02)}
+.message-input input{flex:1;padding:12px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.03);color:inherit}
+
+/* Responsive */
+@media (max-width:880px){
+  .main-layout{flex-direction:column;height:94vh}
+  .sidebar{width:100%;flex-direction:row;align-items:center;justify-content:space-between}
+}
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --accent: #7c3aed;
+  --muted: #96a0b8;
+  --glass: rgba(255, 255, 255, 0.03);
+  --green: #10b981;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+* { box-sizing: border-box; }
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #071024 0%, #0f1724 100%);
+  color: #e6eef8;
+}
+
+/* You can paste the full chat.css content here or keep it in a separate chat.css file */
